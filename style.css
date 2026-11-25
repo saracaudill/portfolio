@@ -17,8 +17,15 @@
     /* gradients */
     --main-gradient: linear-gradient(
         270deg,
-        #FC9E21 10%,
+        #fc9e21 10%,
         #ff6f61 100%
+    );
+
+    --wipe-gradient: linear-gradient(90deg,
+        #fc9e21 0%,
+        #ff6f61 50%,
+        var(--text-color) 50%,
+        var(--text-color) 100%
     );
 
     /* fonts */
@@ -34,8 +41,10 @@
     /* kerning */
     --heading-spacing: 0.04em;
 
-    /* on-hover transition */
+    /* on-hover transitions */
     --transition: 0.15s ease-in-out;
+    --slow-transition: 0.3s ease-in-out;
+    --fast-transition: 0.12s ease-out;
 }
 
 html {
@@ -101,19 +110,33 @@ span {
 
 .navbar a {
     font-size: 1.8rem;
-    color: var(--text-color);
+    color: transparent;
     font-weight: var(--font-medium);
     border-bottom: 3px solid transparent;
     transition: var(--transition);
 
+    /*gradient wipe*/
+
+    background: var(--wipe-gradient);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    display: inline-block;
+
+    transition: var(--transition),
+                background-position var(--fast-transition);
 }
 
 .navbar a:hover {
-    background: var(--main-gradient);
-    background-clip: text;
-    color: transparent;
+    background-position: 0 0;
     border-bottom: 3px solid var(--main-color);
     transform: scale(1.05);
+
+    transition: var(--transition),
+                background-position var(--slow-transition);
 }
 
 .gradient-btn {
