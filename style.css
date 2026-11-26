@@ -52,7 +52,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 68.75%;
     overflow-x: hidden;
      scroll-behavior: smooth;
 }
@@ -394,8 +394,10 @@ section {
     justify-content: center;
     align-items: center;
     background-color: var(--main-color);
-    height: 600px;
-    border-radius: 3rem;
+    /* height: 600px; */
+    /* height: 45rem; */
+    min-height: 40rem;
+    border-radius: 2rem;
     cursor: pointer;
     border: 5px solid transparent;
     transition: var(--slow-transition);
@@ -415,6 +417,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 5rem;
+    width: 100%;
 }
 
 .specialty-info h4 {
@@ -434,6 +437,9 @@ section {
 
 .specialty-info i{
     font-size: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
 }
 
 /* projects section */
