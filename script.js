@@ -1,11 +1,14 @@
 // mobile navigation
 
 let menuIcon = document.querySelector('#menu-icon');
-// let menuSymbol = menuIcon.querySelector('i');
+let menuSymbol = menuIcon.querySelector('i');
+
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
+
+    menuSymbol.classList.toggle('bx-menu');
+    menuSymbol.classList.toggle('bx-x');
 
     let isOpen = navbar.classList.toggle('active');
 
