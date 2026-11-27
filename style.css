@@ -518,12 +518,11 @@ section {
 
 .contact h2 {
     margin-bottom: 3rem;
-    color: var(--main-color);  
 }
 
 .contact form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 3rem;
     margin: 5rem 0;
@@ -540,6 +539,16 @@ section {
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
+}
+
+.contact form label {
+    display: block;
+    font-family: var(--heading-font);
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-top: 1rem;
 }
 
 .footer {
