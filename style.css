@@ -484,7 +484,6 @@ section {
     gap: 2rem;
     padding: 5rem 2rem;
     overflow: hidden;
-    cursor: pointer;
     transition: 0.3s ease;
 }
 
