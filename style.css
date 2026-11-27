@@ -347,6 +347,7 @@ section {
 }
 
 .btn {
+    cursor: pointer;
     display: inline-block;
     padding: 1rem 3rem;
     background-color: var(--main-color);
@@ -549,6 +550,25 @@ section {
     font-size: 1.6rem;
     color: var(--text-color);
     margin-top: 1rem;
+}
+
+/* contact form focus state */
+
+.contact form input:focus-visible,
+.contact form textarea:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+.contact form .btn:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+/* h-captcha spacing */
+
+.contact form .h-captcha {
+    margin: 1.5rem 0;
 }
 
 .footer {
