@@ -643,4 +643,8 @@ section {
     .heading {
         font-size: 5rem;
     }
+
+    .projects-box {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
