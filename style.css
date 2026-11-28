@@ -638,3 +638,9 @@ section {
         flex-direction: column;
     }
 }
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 5rem;
+    }
+}
